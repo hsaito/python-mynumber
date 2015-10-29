@@ -39,3 +39,8 @@ def gen_random_number():
         my_number.append(random.randint(0, 9))
     my_number.append(calc_check_digit(my_number))
     return my_number
+
+
+def verify_string(my_number_str):
+    my_number = list(map(int, my_number_str))
+    return verify_number(my_number)
